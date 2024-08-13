@@ -1,12 +1,4 @@
 # Starter pipeline
-- task: KubernetesManifest@1
-  inputs:
-    action: 'deploy'
-    connectionType: 'azureResourceManager'
-    azureSubscriptionConnection: 'Pay-As-You-Go(f1dc4471-8ec1-4430-811f-7fb09b6a6ead)'
-    azureResourceGroup: 'Mylab-Amol'
-    kubernetesCluster: 'mylab-cluster'
-    namespace: 'default'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
