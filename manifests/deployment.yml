@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: madhavigawaritetrisgame 
-          image: mylabcr240145.azurecr.io/madhavigawaritetrisgame
+          image: mylabmadhaviacr01.azurecr.io/tetrisgame
           ports:
           - containerPort: 80
