@@ -15,5 +15,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.CICD-Secrets }}
+          github_token: ${{ secrets.CICD_SECRET }}
           publish_dir: .   # deploy root files directly
