@@ -4,9 +4,6 @@ on:
   push:
     branches: [ "main" ]
 
-permissions:
-  contents: write   # 👈 required for pushing to gh-pages
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -18,5 +15,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.CICD_SECRET }}   # 👈 using your custom secret
+          github_token: ${{ secrets.CICD_SECRET }}   # 👈 your PAT stored as CICD_SECRET
           publish_dir: .   # deploy root files directly
+          publish_branch: gh-pages   # 👈 target branch for deployment
