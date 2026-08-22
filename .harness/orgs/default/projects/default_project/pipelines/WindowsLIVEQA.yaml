@@ -19,9 +19,6 @@ pipeline:
             deployToAll: false
             infrastructureDefinitions:
               - identifier: windowsonprem
-                tags:
-                  - windows
-                  - qa
           execution:
             steps:
               - step:
