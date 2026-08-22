@@ -1,0 +1,17 @@
+infrastructureDefinition:
+  name: windows-machine
+  identifier: windowsmachine
+  orgIdentifier: default
+  projectIdentifier: default_project
+  environmentRef: QA
+  deploymentType: WinRm
+  type: SshWinRmAws
+  spec:
+    credentialsRef: Windowsmachine
+    connectorRef: awsmachine
+    region: ap-south-1
+    awsInstanceFilter:
+      tags: {}
+    hostConnectionType: PublicIP
+    instanceType: Aws
+  allowSimultaneousDeployments: false
