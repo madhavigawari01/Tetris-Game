@@ -1,5 +1,5 @@
 service:
-  name: test
+  name: windowsqaservice
   identifier: test
   orgIdentifier: default
   projectIdentifier: default_project
