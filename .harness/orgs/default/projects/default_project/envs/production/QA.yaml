@@ -1,6 +1,0 @@
-environment:
-  name: QA
-  identifier: QA
-  orgIdentifier: default
-  projectIdentifier: default_project
-  type: PreProduction
