@@ -24,6 +24,9 @@ pipeline:
               - step:
                   name: Deploy
                   identifier: Deploy
+                  strategy:
+                    repeat:
+                      items: <+stage.output.hosts>
                   template:
                     templateRef: account.Default_IIS_Application_PowerShell
                     versionLabel: v1
